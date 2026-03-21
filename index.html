@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Kavya Chaturvedi — Software Developer. Java, Firebase, Spring Boot, MVVM."/>
+  <title>Kavya Chaturvedi — Software Developer</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+  <link rel="manifest" href="/ico/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="c1"></div>
+<div id="c2"></div>
+
+<!-- MOBILE TOPBAR -->
+<div class="topbar">
+  <div class="nav__logo-terminal" style="border-radius:7px;padding:5px 11px 6px">
+    <span class="nav__logo-prompt">~/portfolio $</span>
+    <span class="nav__logo-name" style="font-size:14px">Kavya<span class="nav__logo-cursor"></span></span>
+  </div>
+  <button class="mob-btn" id="mob-btn"><span class="material-icons-round" style="font-size:1.1rem">menu</span></button>
+</div>
+
+<!-- MOBILE DRAWER -->
+<nav class="mobile-drawer" id="mobile-drawer">
+  <a class="mdlink" data-sec="hero">Home</a>
+  <a class="mdlink" data-sec="about">About</a>
+  <a class="mdlink" data-sec="skills">Skills</a>
+  <a class="mdlink" data-sec="projects">Projects</a>
+  <a class="mdlink" data-sec="education">Education</a>
+  <a class="mdlink" data-sec="achievements">Awards</a>
+  <a class="mdlink" data-sec="contact">Contact</a>
+</nav>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav__top">
+
+    <!-- Terminal Logo -->
+    <a href="#hero" class="nav__logo" data-sec="hero">
+      <div class="nav__logo-terminal">
+        <span class="nav__logo-prompt">~/portfolio $</span>
+        <span class="nav__logo-name">Kavya<span class="nav__logo-cursor"></span></span>
+      </div>
+    </a>
+
+    <ul class="nav__links">
+      <li><a class="nav__link active" data-sec="hero">Home</a></li>
+      <li><a class="nav__link" data-sec="about">About</a></li>
+      <li><a class="nav__link" data-sec="skills">Skills</a></li>
+      <li><a class="nav__link" data-sec="projects">Projects</a></li>
+      <li><a class="nav__link" data-sec="education">Education</a></li>
+      <li><a class="nav__link" data-sec="achievements">Awards</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <!-- LeetCode -->
+      <a href="https://leetcode.com/u/ss3207428/" target="_blank" rel="noopener" class="nav__icon" title="LeetCode">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/Kavychaturvedi5427" target="_blank" rel="noopener" class="nav__icon" title="GitHub">
+        <i class="devicon-github-original" style="font-size:1rem"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kavya-chaturvedi-1a181932a/" target="_blank" rel="noopener" class="nav__icon" title="LinkedIn">
+        <i class="devicon-linkedin-plain" style="font-size:1rem;color:#0a66c2"></i>
+      </a>
+      <!-- Resume button -->
+<a href="https://kavya-portfolio-resume27.web.app/resume.pdf" target="_blank" rel="noopener" class="nav__resume" title="Download Resume">        <span class="material-icons-round">description</span>
+        Resume
+      </a>
+      <a href="#contact" class="nav__hire" data-sec="contact">
+        <span class="material-icons-round">mail_outline</span>
+        Hire Me
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+<section id="hero">
+
+  <!-- Newspaper masthead strip -->
+  <div class="hero-masthead">
+    <span class="hero-masthead-date">Kanpur, Uttar Pradesh · PSIT · B.Tech CSE (Cyber Security) · 2023–2027</span>
+    <span class="hero-masthead-tag">
+      <span class="hero-masthead-dot"></span>
+      Open to Opportunities
+    </span>
+  </div>
+
+  <!-- Editorial two-column body -->
+  <div class="hero-body">
+
+    <!-- Left: headline + actions -->
+    <div class="hero-left">
+      <div>
+        <div class="hero-kicker reveal">Software Developer · Portfolio</div>
+        <h1 class="hero-headline reveal d1">
+          KAVYA<br>
+          <span class="italic">Chaturvedi</span>
+        </h1>
+        <div class="hero-role reveal d2">
+          <span class="typed-val" id="typed"></span>
+          <span class="cblink"></span>
+          <span style="color:var(--muted-3);margin:0 0.3rem">|</span>
+          <span>Android · Spring Boot · Web</span>
+        </div>
+        <p class="hero-deck reveal d2">
+          Software Developer with hands-on experience <strong>shipping production apps</strong>
+          on the Play Store. Proficient in Java, MVVM, Firebase and REST APIs.
+          Currently expanding into <strong>Spring Boot</strong> for full-stack development.
+        </p>
+        <div class="hero-actions reveal d3">
+          <a href="#contact" class="btn btn-primary" data-sec="contact">
+            <span class="material-icons-round" style="font-size:0.95rem">waving_hand</span>
+            Let's Connect
+          </a>
+          <a href="#projects" class="btn btn-secondary" data-sec="projects">
+            <span class="material-icons-round" style="font-size:0.95rem">rocket_launch</span>
+            Projects
+          </a>
+<a href="https://kavya-portfolio-resume27.web.app/resume.pdf" target="_blank" rel="noopener" class="nav__resume" title="Download Resume">            <span class="material-icons-round" style="font-size:0.95rem">description</span>
+            Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-stats reveal d4">
+        <div class="hstat"><div class="hstat-val">8.97<sup>/10</sup></div><div class="hstat-lbl">CGPA</div></div>
+        <div class="hstat"><div class="hstat-val">2<sup> apps</sup></div><div class="hstat-lbl">Play Store Live</div></div>
+        <div class="hstat"><div class="hstat-val">150<sup>+</sup></div><div class="hstat-lbl">LeetCode</div></div>
+        <div class="hstat"><div class="hstat-val">4<sup>th</sup></div><div class="hstat-lbl">HackwithUP</div></div>
+      </div>
+    </div>
+
+    <!-- Right: profile column -->
+    <div class="hero-right reveal d2">
+      <div class="hero-byline">
+        <div class="hero-avatar">KC</div>
+        <div>
+          <div class="hero-byline-name">Kavya Chaturvedi</div>
+          <div class="hero-byline-role">Software Developer · PSIT Kanpur</div>
+          <div class="hero-byline-status"><span class="sdot"></span>Open to Opportunities</div>
+        </div>
+      </div>
+
+      <div class="hero-info-grid">
+        <div class="hero-info-row"><span class="material-icons-round">location_on</span>Kanpur, Uttar Pradesh, India</div>
+        <div class="hero-info-row"><span class="material-icons-round">school</span>B.Tech CSE · Cyber Security · PSIT</div>
+        <div class="hero-info-row"><span class="material-icons-round">calendar_today</span>2023 – 2027</div>
+        <div class="hero-info-row"><span class="material-icons-round">military_tech</span>2 Apps on Play Store · 150+ LeetCode</div>
+        <div class="hero-info-row"><span class="material-icons-round">code</span>Java · MVVM · Firebase · Spring Boot</div>
+      </div>
+
+      <div class="hero-social">
+        <a href="https://github.com/Kavychaturvedi5427" target="_blank" rel="noopener" class="soc-btn">
+          <i class="devicon-github-original" style="font-size:0.95rem"></i>GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/kavya-chaturvedi-1a181932a/" target="_blank" rel="noopener" class="soc-btn">
+          <i class="devicon-linkedin-plain" style="font-size:0.95rem;color:#0a66c2"></i>LinkedIn
+        </a>
+        <a href="https://leetcode.com/u/ss3207428/" target="_blank" rel="noopener" class="soc-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#b85c2c">
+            <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+          </svg>
+          LeetCode
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&to=kavya58chaturvedi@gmail.com" target="_blank" rel="noopener" class="soc-btn">
+          <span class="material-icons-round" style="font-size:0.95rem">mail_outline</span>Email
+        </a>
+<a href="https://kavya-portfolio-resume27.web.app/resume.pdf" target="_blank" rel="noopener" class="nav__resume" title="Download Resume">          <span class="material-icons-round" style="font-size:0.95rem">description</span>Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-inner">
+    <div class="sec-rule reveal">
+      <div class="sec-rule-line"></div>
+      <div class="sec-rule-label">About Me</div>
+      <div class="sec-rule-line-thin"></div>
+    </div>
+    <div class="about-grid">
+      <div class="reveal d1">
+        <div class="about-pullquote">"Building software that ships."</div>
+      </div>
+      <div class="reveal d2">
+        <p class="about-body">I'm a <strong>Software Developer</strong> and B.Tech CSE student specialising in Cyber Security at PSIT Kanpur. I've shipped two live Android apps on the Play Store, competed in hackathons, and consistently delivered production-ready software.</p>
+        <p class="about-body">My core expertise is <strong>Java, MVVM architecture, Firebase and REST API integration</strong>, backed by a strong DSA foundation (150+ LeetCode problems). Currently expanding backend skills with <strong>Spring Boot</strong> to build full-stack applications.</p>
+        <div class="chips">
+          <span class="chip">Java</span><span class="chip">Android SDK</span><span class="chip">MVVM</span>
+          <span class="chip">LiveData</span><span class="chip">Firebase</span><span class="chip">Spring Boot</span>
+          <span class="chip">REST APIs</span><span class="chip">PostgreSQL</span><span class="chip">Python</span>
+          <span class="chip">DSA</span><span class="chip">Cyber Security</span><span class="chip">Play Console</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-inner">
+    <div class="sec-rule reveal">
+      <div class="sec-rule-line"></div>
+      <div class="sec-rule-label">Skills</div>
+      <div class="sec-rule-line-thin"></div>
+    </div>
+    <h2 class="sec-title reveal d1">Tech <em>Stack</em></h2>
+    <p class="sec-sub reveal d2">The tools I reach for to build production-grade software.</p>
+
+    <div class="skill-tabs-row reveal d2">
+      <button class="stab-arrow" id="tab-prev"><span class="material-icons-round">chevron_left</span></button>
+      <button class="stab active" data-tab="0"><span class="material-icons-round">phone_android</span>Android</button>
+      <button class="stab" data-tab="1"><span class="material-icons-round">cloud</span>Backend</button>
+      <button class="stab" data-tab="2"><span class="material-icons-round">data_object</span>Languages</button>
+      <button class="stab" data-tab="3"><span class="material-icons-round">storage</span>Databases</button>
+      <button class="stab" data-tab="4"><span class="material-icons-round">web</span>Web</button>
+      <button class="stab" data-tab="5"><span class="material-icons-round">build</span>Tools</button>
+      <button class="stab-arrow" id="tab-next"><span class="material-icons-round">chevron_right</span></button>
+    </div>
+
+    <div class="skill-panel active">
+      <div class="skill-icons-grid">
+        <div class="si-item"><i class="devicon-java-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Java</span></div>
+        <div class="si-item"><i class="devicon-androidstudio-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Android Studio</span></div>
+        <div class="si-item"><i class="devicon-android-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Android SDK</span></div>
+        <div class="si-item"><i class="devicon-xml-plain" style="font-size:28px;color:#e37933"></i><span class="si-item__lbl">XML</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#b85c2c">architecture</span><span class="si-item__lbl">MVVM</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#6b5f4e">design_services</span><span class="si-item__lbl">Material 3</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#6b5f4e">bar_chart</span><span class="si-item__lbl">MPAndroidChart</span></div>
+      </div>
+    </div>
+    <div class="skill-panel">
+      <div class="skill-icons-grid">
+        <div class="si-item"><i class="devicon-spring-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Spring Boot</span></div>
+        <div class="si-item"><i class="devicon-firebase-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Firebase</span></div>
+        <div class="si-item"><i class="devicon-fastapi-plain colored" style="font-size:28px"></i><span class="si-item__lbl">FastAPI</span></div>
+        <div class="si-item"><i class="devicon-flask-original" style="font-size:28px;color:#555"></i><span class="si-item__lbl">Flask</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#b85c2c">api</span><span class="si-item__lbl">REST APIs</span></div>
+      </div>
+    </div>
+    <div class="skill-panel">
+      <div class="skill-icons-grid">
+        <div class="si-item"><i class="devicon-java-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Java</span></div>
+        <div class="si-item"><i class="devicon-python-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Python</span></div>
+        <div class="si-item"><i class="devicon-mysql-plain colored" style="font-size:28px"></i><span class="si-item__lbl">SQL</span></div>
+      </div>
+    </div>
+    <div class="skill-panel">
+      <div class="skill-icons-grid">
+        <div class="si-item"><i class="devicon-postgresql-plain colored" style="font-size:28px"></i><span class="si-item__lbl">PostgreSQL</span></div>
+        <div class="si-item"><i class="devicon-mysql-plain colored" style="font-size:28px"></i><span class="si-item__lbl">MySQL</span></div>
+        <div class="si-item"><i class="devicon-firebase-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Firestore</span></div>
+        <div class="si-item"><i class="devicon-sqlite-plain colored" style="font-size:28px"></i><span class="si-item__lbl">SQLite</span></div>
+      </div>
+    </div>
+    <div class="skill-panel">
+      <div class="skill-icons-grid">
+        <div class="si-item"><i class="devicon-html5-plain colored" style="font-size:28px"></i><span class="si-item__lbl">HTML5</span></div>
+        <div class="si-item"><i class="devicon-css3-plain colored" style="font-size:28px"></i><span class="si-item__lbl">CSS3</span></div>
+        <div class="si-item"><i class="devicon-react-original colored" style="font-size:28px"></i><span class="si-item__lbl">React</span></div>
+        <div class="si-item"><i class="devicon-opencv-plain colored" style="font-size:28px"></i><span class="si-item__lbl">OpenCV</span></div>
+      </div>
+    </div>
+    <div class="skill-panel">
+      <div class="skill-icons-grid">
+        <div class="si-item"><i class="devicon-git-plain colored" style="font-size:28px"></i><span class="si-item__lbl">Git</span></div>
+        <div class="si-item"><i class="devicon-github-original" style="font-size:28px;color:#333"></i><span class="si-item__lbl">GitHub</span></div>
+        <div class="si-item"><i class="devicon-googlecloud-plain colored" style="font-size:28px"></i><span class="si-item__lbl">GCloud</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#6b5f4e">terminal</span><span class="si-item__lbl">ADB / AVD</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#5a7a5e">store</span><span class="si-item__lbl">Play Console</span></div>
+        <div class="si-item"><span class="material-icons-round" style="font-size:28px;color:#b85c2c">psychology</span><span class="si-item__lbl">DSA</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-inner">
+    <div class="sec-rule reveal">
+      <div class="sec-rule-line"></div>
+      <div class="sec-rule-label">Projects</div>
+      <div class="sec-rule-line-thin"></div>
+    </div>
+    <h2 class="sec-title reveal d1">What I've <em>Built</em></h2>
+    <p class="sec-sub reveal d2">Production apps across Android, backend, and AI.</p>
+
+    <div class="proj-grid reveal d2">
+
+      <!-- UniGo -->
+      <div class="pcard">
+        <div class="pcard__img">
+          <img data-img="unigo" src="" alt="UniGo"/>
+          <div class="pcard__badge"><span class="live-dot"></span>Live on Play Store</div>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__num">01 · UniGo</div>
+          <div class="pcard__title">Student Companion App</div>
+          <div class="pcard__period">Jan 2026 – March 2026</div>
+          <div class="pcard__stack">
+            <span class="ptag">Java</span><span class="ptag">Firebase</span>
+            <span class="ptag">MVVM</span><span class="ptag">LiveData</span><span class="ptag">Firestore</span>
+          </div>
+          <p class="pcard__desc">MVVM + LiveData for attendance, notes and timetables with real-time Firestore sync. Repository pattern enforces clean separation between UI and data.</p>
+          <div class="pcard__footer">
+            <a href="https://github.com/Kavychaturvedi5427/UniGo.git" target="_blank" rel="noopener" class="lbtn"><i class="devicon-github-original"></i> GitHub</a>
+            <a href="https://play.google.com/store/apps/details?id=com.kavya.unigo&hl=en_IN" target="_blank" rel="noopener" class="lbtn"><span class="material-icons-round">android</span> Play Store</a>
+            <span class="live-bdg"><span style="width:5px;height:5px;border-radius:50%;background:var(--sage);display:inline-block"></span> Live</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Ledger -->
+      <div class="pcard">
+        <div class="pcard__img">
+          <img data-img="ledger" src="" alt="The Ledger"/>
+          <div class="pcard__badge"><span class="live-dot"></span>Live on Play Store</div>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__num">02 · The Ledger</div>
+          <div class="pcard__title">Smart Expense Tracker</div>
+          <div class="pcard__period">Aug 2025 – Oct 2025</div>
+          <div class="pcard__stack">
+            <span class="ptag">Java</span><span class="ptag">Firebase</span>
+            <span class="ptag">MVVM</span><span class="ptag">MPAndroidChart</span><span class="ptag">Biometric Auth</span>
+          </div>
+          <p class="pcard__desc">Biometric login + PIN fallback with secure per-user data isolation. Spending insights visualised with MPAndroidChart. <em>Track every rupee.</em></p>
+          <div class="pcard__footer">
+            <a href="https://github.com/Kavychaturvedi5427/The-Ledger.git" target="_blank" rel="noopener" class="lbtn"><i class="devicon-github-original"></i> GitHub</a>
+            <a href="https://play.google.com/store/apps/details?id=com.kavya.theledger" target="_blank" rel="noopener" class="lbtn"><span class="material-icons-round">android</span> Play Store</a>
+            <span class="live-bdg"><span style="width:5px;height:5px;border-radius:50%;background:var(--sage);display:inline-block"></span> Live</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fruits — Face Recognition -->
+      <div class="pcard">
+        <div class="pcard__img pcard__img--logo">
+          <img data-img="fruits" src="" alt="Fruits — Face Recognition Login"/>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__num">03 · Fruits</div>
+          <div class="pcard__title">Face Recognition Login</div>
+          <div class="pcard__period">Jan 2024 – Apr 2024</div>
+          <div class="pcard__stack">
+            <span class="ptag">Python</span><span class="ptag">OpenCV</span>
+            <span class="ptag">Flask</span><span class="ptag">SQLite</span>
+          </div>
+          <p class="pcard__desc">Dual-factor authentication (face + password) via real-time webcam. 95% match accuracy via cosine similarity on facial embeddings.</p>
+          <div class="pcard__footer">
+            <a href="https://github.com/ankit-prabhavak/FaceRecognitionUnifiedInterfaceTechnoloy.git" target="_blank" rel="noopener" class="lbtn"><i class="devicon-github-original"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HackwithUP -->
+      <div class="pcard pcard--hack">
+        <div class="pcard__img pcard__img--hack">
+          <div class="hack-rank-big">4th</div>
+          <div class="hack-place-lbl">Place Secured · HackwithUP 2025</div>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__num" style="color:rgba(250,247,241,0.2)">04 · Hackathon</div>
+          <div class="pcard__title">HackwithUP 2025</div>
+          <div class="pcard__period" style="color:rgba(250,247,241,0.35)">Oct 2025 · 50+ teams · Kisan Setu</div>
+          <div class="pcard__stack">
+            <span style="font-size:0.62rem;font-weight:700;color:#8ab4f8;background:rgba(138,180,248,0.1);border:1px solid rgba(138,180,248,0.22);border-radius:4px;padding:0.16rem 0.5rem">React</span>
+            <span style="font-size:0.62rem;font-weight:700;color:#8ab4f8;background:rgba(138,180,248,0.1);border:1px solid rgba(138,180,248,0.22);border-radius:4px;padding:0.16rem 0.5rem">Firebase</span>
+            <span style="font-size:0.62rem;font-weight:700;color:#8ab4f8;background:rgba(138,180,248,0.1);border:1px solid rgba(138,180,248,0.22);border-radius:4px;padding:0.16rem 0.5rem">FastAPI</span>
+          </div>
+          <p class="pcard__desc">Farmer-to-buyer marketplace. Contributed to building and explored deployment approaches.</p>
+          <div class="pcard__footer">
+            <span class="hack-bdg">🏆 4th / 50+ Teams</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sec-inner">
+    <div class="sec-rule reveal">
+      <div class="sec-rule-line"></div>
+      <div class="sec-rule-label">Education</div>
+      <div class="sec-rule-line-thin"></div>
+    </div>
+    <h2 class="sec-title reveal d1">Academic <em>Background</em></h2>
+    <p class="sec-sub reveal d2">Consistent performance at every stage.</p>
+    <div class="edu-list reveal d2">
+      <div class="edu-row">
+        <div class="edu-year">2023–2027</div>
+        <div><div class="edu-school">Pranveer Singh Institute of Technology, Kanpur</div><div class="edu-degree">B.Tech — Computer Science &amp; Engineering (Cyber Security)</div></div>
+        <div><div class="edu-score">8.97</div><div class="edu-score-lbl">CGPA</div></div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-year">2023</div>
+        <div><div class="edu-school">Subhash Public Senior Secondary School, Kanpur</div><div class="edu-degree">Intermediate — PCM (CBSE)</div></div>
+        <div><div class="edu-score">91.8%</div><div class="edu-score-lbl">Percentage</div></div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-year">2021</div>
+        <div><div class="edu-school">Subhash Public Senior Secondary School, Kanpur</div><div class="edu-degree">High School (CBSE)</div></div>
+        <div><div class="edu-score">92.8%</div><div class="edu-score-lbl">Percentage</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="sec-inner">
+    <div class="sec-rule reveal">
+      <div class="sec-rule-line"></div>
+      <div class="sec-rule-label">Recognition</div>
+      <div class="sec-rule-line-thin"></div>
+    </div>
+    <h2 class="sec-title reveal d1">Awards &amp; <em>Certifications</em></h2>
+    <div class="ach-grid reveal d2">
+      <div class="acard">
+        <div class="acard-head"><div class="acard-icon"><span class="material-icons-round">emoji_events</span></div><div class="acard-lbl">Achievements</div></div>
+        <div class="alist">
+          <div class="aitm"><div class="adot"></div><div class="atxt">Published <strong>The Ledger</strong> &amp; <strong>UniGo</strong> on Play Store<span>Two live production Android apps</span></div></div>
+          <div class="aitm"><div class="adot"></div><div class="atxt"><strong>4th place</strong> at HackwithUP 2025<span>Among 50+ competing teams</span></div></div>
+          <div class="aitm"><div class="adot"></div><div class="atxt">Solved <strong>150+ LeetCode</strong> problems<span>Strong DSA foundation — <a href="https://leetcode.com/u/ss3207428/" target="_blank" rel="noopener" style="color:var(--terra)">View Profile →</a></span></div></div>
+          <div class="aitm"><div class="adot"></div><div class="atxt"><strong>Google Cloud Innovator</strong> badge<span>Recognised by Google Cloud</span></div></div>
+        </div>
+      </div>
+      <div class="acard">
+        <div class="acard-head">
+          <div class="acard-icon" style="background:var(--sage-bg);border-color:var(--sage-line);color:var(--sage)"><span class="material-icons-round">workspace_premium</span></div>
+          <div class="acard-lbl" style="color:var(--sage)">Certifications</div>
+        </div>
+        <div class="alist">
+          <div class="aitm"><div class="adot adot-g"></div><div class="atxt"><strong>Fundamental Programming</strong><span>Python, SQL, HTML5, CSS3 — Infosys Springboard</span></div></div>
+          <div class="aitm"><div class="adot adot-g"></div><div class="atxt"><strong>Problem Solving &amp; Java</strong><span>HackerRank certified</span></div></div>
+          <div class="aitm"><div class="adot adot-g"></div><div class="atxt"><strong>SQL Certification</strong><span>HackerRank certified</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="sec-rule reveal" style="margin-bottom:1rem">
+          <div class="sec-rule-line" style="background:rgba(250,247,241,0.2)"></div>
+          <div class="sec-rule-label" style="color:rgba(250,247,241,0.4)">Contact</div>
+          <div class="sec-rule-line-thin" style="background:rgba(250,247,241,0.1)"></div>
+        </div>
+        <h2 class="contact-hl reveal d1">Let's Build<br><em>Together.</em></h2>
+        <p class="contact-desc reveal d2">Open to SDE internships, Android freelance, and full-time roles. I respond fast — reach out.</p>
+        <div class="contact-open reveal d2"><span class="material-icons-round" style="font-size:0.8rem">work_outline</span>Open to Internships &amp; Full-Time</div>
+        <div class="clinks reveal d3">
+          <a href="https://mail.google.com/mail/?view=cm&to=kavya58chaturvedi@gmail.com" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon"><span class="material-icons-round">mail_outline</span></div>
+            <div><div class="clink-lbl">Email</div><div class="clink-val">kavya58chaturvedi@gmail.com</div></div>
+          </a>
+          <a href="tel:+917355968041" class="clink">
+            <div class="clink-icon"><span class="material-icons-round">phone</span></div>
+            <div><div class="clink-lbl">Phone</div><div class="clink-val">+91-7355968041</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/kavya-chaturvedi-1a181932a/" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon"><i class="devicon-linkedin-plain" style="font-size:0.9rem;color:#0a66c2"></i></div>
+            <div><div class="clink-lbl">LinkedIn</div><div class="clink-val">kavya-chaturvedi-1a181932a</div></div>
+          </a>
+          <a href="https://github.com/Kavychaturvedi5427" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon"><i class="devicon-github-original" style="font-size:0.9rem;color:rgba(250,247,241,0.7)"></i></div>
+            <div><div class="clink-lbl">GitHub</div><div class="clink-val">Kavychaturvedi5427</div></div>
+          </a>
+          <a href="https://leetcode.com/u/ss3207428/" target="_blank" rel="noopener" class="clink">
+            <div class="clink-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(184,112,70,0.85)">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+            </div>
+            <div><div class="clink-lbl">LeetCode</div><div class="clink-val">ss3207428 · 150+ Problems</div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card reveal d1">
+        <div class="form-card-title">Send a Message</div>
+        <div class="form-card-sub">Fill in the form — I'll receive it directly in my inbox.</div>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="ffield"><label class="flabel" for="f-name">Full Name</label><input class="finput" id="f-name" type="text" placeholder="Your name" required/></div>
+            <div class="ffield"><label class="flabel" for="f-email">Email</label><input class="finput" id="f-email" type="email" placeholder="you@example.com" required/></div>
+            <div class="ffield full"><label class="flabel" for="f-message">Message</label><textarea class="ftextarea" id="f-message" placeholder="Tell me about the opportunity…" required></textarea></div>
+          </div>
+          <button class="fsubmit" id="form-submit" type="submit">
+            <span class="material-icons-round" style="font-size:1rem">send</span>Send Message
+          </button>
+          <div class="fstatus" id="form-status"></div>
+        </form>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© 2025 Kavya Chaturvedi · Kanpur, India</span>
+  <span>
+    <a href="https://github.com/Kavychaturvedi5427" target="_blank">GitHub</a> ·
+    <a href="https://leetcode.com/u/ss3207428/" target="_blank">LeetCode</a> ·
+    <a href="https://www.linkedin.com/in/kavya-chaturvedi-1a181932a/" target="_blank">LinkedIn</a> ·
+    <a href="mailto:kavya58chaturvedi@gmail.com">Email</a>
+  </span>
+  <span>HTML · CSS · JS</span>
+</footer>
+
+<button class="fab" id="fab"><span class="material-icons-round">mail_outline</span></button>
+
+<script src="images.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
