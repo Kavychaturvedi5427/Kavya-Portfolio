@@ -1,1 +1,1 @@
-![Portfolio Banner](./kavya_portfolio_thumbnail.svg)
+[![Portfolio](./kavya_portfolio_thumbnail.png)](https://kavyadev.in)
