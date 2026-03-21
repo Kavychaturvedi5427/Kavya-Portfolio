@@ -1,0 +1,1 @@
+![Portfolio Banner](kavya_portfolio_thumbnail.svg)
