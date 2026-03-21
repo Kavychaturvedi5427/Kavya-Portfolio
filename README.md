@@ -1,1 +1,3 @@
-[![Portfolio](./kavya_portfolio_thumbnail.png)](https://kavyadev.in)
+<a href="https://kavyadev.in">
+  <img src="./kavya_portfolio_thumbnail.png" width="100%">
+</a>
