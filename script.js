@@ -4,19 +4,25 @@
 'use strict';
 
 /* ── CURSOR ── */
-const c1=document.getElementById('c1'), c2=document.getElementById('c2');
-let mx=0,my=0,ox=0,oy=0;
-document.addEventListener('mousemove',e=>{
+const c1 = document.getElementById('c1');
+const c2 = document.getElementById('c2');
+let mx=0, my=0, ox=0, oy=0;
+
+document.addEventListener('mousemove', e => {
   mx=e.clientX; my=e.clientY;
-  c1.style.left=mx+'px'; c1.style.top=my+'px';
+  c1.style.left = mx+'px';
+  c1.style.top  = my+'px';
 });
 (function lag(){
-  ox+=(mx-ox)*0.1; oy+=(my-oy)*0.1;
-  c2.style.left=ox+'px'; c2.style.top=oy+'px';
+  ox += (mx-ox) * 0.12;
+  oy += (my-oy) * 0.12;
+  c2.style.left = ox+'px';
+  c2.style.top  = oy+'px';
   requestAnimationFrame(lag);
 })();
+
 const sc=(cls,on)=>document.body.classList.toggle(cls,on);
-document.addEventListener('mouseover',e=>{
+document.addEventListener('mouseover', e=>{
   const a=!!e.target.closest('a,button,.chip,.stab,.pcard,.clink,.lbtn,.fsubmit,.fab,.nav__hire,.nav__resume,.nav__icon,.hclink,.si-item,.soc-btn');
   const t=!!e.target.closest('input,textarea');
   sc('cl',a&&!t); sc('ct',t);
